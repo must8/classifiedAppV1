@@ -1,0 +1,151 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+
+/*
+new style starts
+*/
+body, html{
+box-sizing: border-box;
+}
+.cate-list {
+  width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+  
+}
+.cate-list .item{
+  width:50%;
+  box-sizing: border-box;
+  list-style: none;
+  padding:10px;
+
+}
+.cate-list .item span{
+  display: block;
+}
+.cate-list li{
+  float: left;
+  margin-bottom: 15px;
+}
+footer{
+  clear: both;
+}
+.clearfix:after {
+  content: " "; /* Older browser do not support empty content */
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+li img{
+  width:auto;
+  height: 150px;
+}
+.header{
+  margin-bottom:30px;
+}
+button{
+  padding: 5px;
+    margin: 5px;
+}
+.logo img{
+  height:150px;
+  width:150px;
+}
+.logo, .buttons-wrap{
+display: inline-block;
+vertical-align: bottom;
+}
+.header-wrap{
+  text-align: left;
+}
+.product{
+  box-sizing: border-box;
+}
+.product img{
+  height:200px;
+  width:auto;
+}
+.preview{
+  overflow: hidden;
+}
+.product .preview, .product .description{
+width:50%;
+display: inline-block;
+vertical-align: top;
+}
+.product .description{
+  text-align: left;
+}
+.product .description div{ 
+  padding:5px;
+}
+.product span{
+display: block;
+padding:5px;
+margin:5px;
+padding-left: 20px;
+}
+.tab {
+  float: left;
+  width: 50%;
+}
+.filters-sub{
+  text-align: left;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+.filters-sub label{
+margin-bottom:8px;
+}
+.filter-area{
+  padding:10px;
+}
+.filter-area input{
+  margin:3px;
+}
+.cartList{
+  border: 1px solid #a7a7a7;
+}
+.connectToSeller {
+  margin:50px;
+  border: 1px solid #a7a7a7;
+  padding:30px;
+}
+.textarea{
+  height: 50px;
+}
+.seler-information{
+  margin:50px;
+  border: 1px solid #a7a7a7;
+  padding:30px;
+}
