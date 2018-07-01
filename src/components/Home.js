@@ -16,7 +16,7 @@ class Home extends Component {
                }
 
             return (
-                <div>
+                <div className="container">
                  <span className="categories-header"> { this.props.objBufferData.details.title }  </span>
                     <ul className="cate-list clearfix">
                     {list}     

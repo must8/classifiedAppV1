@@ -11,13 +11,14 @@ class Header extends Component {
 render () {
     return (
         <header className="header">
-        <div className="clearfix header-wrap">
-            <figure className="logo"> 
+        <div className="clearfix header-wrap container">
+         <div className="header-container clearfix"> 
+            <figure className="logo tab-h"> 
                 <Link to="/home">
-                    <img alt="" src="https://s3-eu-west-1.amazonaws.com/tpd/logos/588bbd090000ff00059b9867/0x0.png" />
+                    <img alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShrvsDmAwLTOTPxrzbzEkXzY_ngiiIR1DW-YIcCRX1ciUrqLc56A" />
                 </Link> 
             </figure>
-            <div className="buttons-wrap">
+            <div className="buttons-wrap tab-h">
             <button><Link to="/home">Home</Link></button>
             <button><Link to="/mycart">Mycart</Link></button>
             {
@@ -27,6 +28,7 @@ render () {
                 this.props.loginData.loginStatus && <button><Link to="/profile">My profile</Link></button>
             }
             </div>
+        </div>
         </div>
        </header>
     )

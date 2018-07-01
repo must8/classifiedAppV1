@@ -94,6 +94,7 @@ class ProductsFilterComponent extends Component {
         });       
         return(
             <div className="sub-row tab filters-sub">
+            <span className="categories-header">Filter items from given list </span>
                 <div>
                     <div className="price-filter filter-area">
                            <label> Price </label>

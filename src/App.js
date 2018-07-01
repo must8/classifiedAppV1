@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './libraries/css/global.css'
 import './App.css';
 import AppContent from './components/AppContent'
 import {

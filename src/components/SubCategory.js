@@ -72,7 +72,7 @@ class SubCategory extends Component {
                      })
                }
             return (
-                <div>
+                <div className="container clearfix">
                     <span  className="categories-header"> { this.props.objBufferData.details.title } </span>
                     <ProductsFilterComponent item = {this.props.objBufferData.details.filterData} />
                     <div className=" tab product-items">
