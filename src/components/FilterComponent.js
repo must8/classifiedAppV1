@@ -81,37 +81,39 @@ class ProductsFilterComponent extends Component {
         });
 
         const featureTypes = this.state.filterData.featureData.map((item, index)=> {  
-            return ( 
-                   <div key={index}>
-                      <label>
+            return (  
+                      <label key={index}>
                           <input
                            checked={item.checked ? true: false} 
                            onChange={(e)=> {this.handleChange(e, index)}} 
                            type='checkbox' /> {item.title} 
-                        </label> 
-                    </div>
+                        </label>                 
                 )
         });       
         return(
-            <div className="sub-row tab filters-sub">
+            <div className="sub-row filterTab filters-sub">
             <span className="categories-header">Filter items from given list </span>
                 <div>
                     <div className="price-filter filter-area">
-                           <label> Price </label>
-                            <input ref={this.minPriceRef} />
-                            <input ref={this.maxPriceRef} />
-                            <button onClick={()=> this.setPriceFilter()}>Go</button>
-                            <p> Price between 100 and 150 </p>
+                           <label className="priceFilterLabel">Filter by Price: </label>
+                            <input placeholder="min-100" ref={this.minPriceRef} />
+                            <input placeholder="max-150" ref={this.maxPriceRef} />
+                            <button className="pricefilterButton" onClick={()=> this.setPriceFilter()}>Go</button>
+                           
                     </div>
-                    <div className="price-filter filter-area">
-                         <label> Manufacturor </label>
-                            <select multiple >
+                    <div className="price-filter filter-area clearfix">
+                         <label className="manufacturor"> Manufacturor: </label>
+                            <select className="manufacturor-filter-select">
                                { manufacturorOptions }
                             </select>
                     </div>
-                    <div className="type-filter filter-area">
-                            <span>Type</span>
+                    <div className="type-filter filter-area clearfix">
+                            <div className="filter-check-label">
+                             <span>Type</span>
+                            </div>
+                             <div className="filter-check-value" >
                                 { featureTypes }
+                                </div>
                     </div>
                 </div>
           </div>

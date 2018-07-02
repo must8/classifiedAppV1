@@ -25,14 +25,14 @@ render () {
     })
 
     return (
-        <div> 
-          <h2> Items in your cart </h2>
+        <div className="container"> 
+          <h2 className="cart-header"> Items in your cart </h2>
             <div>
               <ul>
                 {cartList}
               </ul>
             </div>
-            <div>  <button><Link to="/checkout">Proceed To Checkout and make payment. We will send these items to your doorstep.</Link></button> </div>
+            <div class="link-to-checkout">  <button><Link to="/checkout">Proceed To Checkout and make payment. We will send these items to your doorstep.</Link></button> </div>
         </div>
     )
   }

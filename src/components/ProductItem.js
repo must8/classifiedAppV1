@@ -13,20 +13,21 @@ class ProductItem extends Component {
                 <img alt="" src={this.props.item.image} />
             </div>
             <div className="description">
-                <div> Product Name: { this.props.item.productName } </div>
-                <div> Product Description: { this.props.item.productDescription } </div>
+                <div className="product-title"> { this.props.item.productName } </div>
+                <div> <label> Product Description: </label> <p className="product-Description"> { this.props.item.productDescription } </p> </div>
                 <div className="technicalDesc" >
-                    Technical Specification:
+                    <label className="technical-spec">Technical Specification: </label>
                     {
                         this.props.item.technicleSpecification.map((item, index) =>{                           
-                            return <span key = {index}> {item} </span>
+                            return <li key = {index}> {item} </li>
                         })
                     }
                 </div>
-            </div>
-            <div className="productbar">
+                <div className="productbar">
                 <span> Price Rs: {this.props.item.price} </span>
-            </div>         
+            </div>  
+            </div>
+                  
         </div>
       )
   }

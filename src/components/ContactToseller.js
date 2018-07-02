@@ -7,15 +7,18 @@ class ContactToseller extends Component {
     render(){
         return(
             <div className="connectToSeller">
-              <span> Chat with Seller </span>
-              {
-                  !this.props.loginData.loginStatus && <button><Link to="/login">Please login to chat</Link></button>
-              }
-               <form>
+              <span className="chat-title"> Chat with Seller </span>
+               <form >
+               <div className="clearfix">
                  <textarea className="textarea">
                  </textarea>
-                 <button>Submit your messege </button>
+                 {
+                    !this.props.loginData.loginStatus && <button class="saler-login"><Link to="/login">Please login to chat</Link></button>
+                }
+                 <button className="message-submit">Submit your messege </button>
+                 </div>
                </form>
+               
             </div>
         )
     }

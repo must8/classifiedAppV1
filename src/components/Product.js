@@ -16,17 +16,23 @@ class Product extends Component {
     }
 
     render () {
-            return (
-                <div>
-                 <span  className="categories-header"> { this.props.objBufferData.details.title }</span>            
-                    <ProductItem item = { this.props.objBufferData.data }/>     
-                    <button
-                        onClick={()=>{this.addToCartHandeler(this.props.myCartData,this.props.objBufferData.data)}}> 
-                        Add to Cart and review later 
-                    </button>            
-                    <ContactToseller />
-                    <SelerInformation sellerInfo = {this.props.objBufferData.sellerInfo}/>
+         return (
+            <div className="container">
+                <span  className="categories-header"> { this.props.objBufferData.details.title }</span> 
+                <div className="clearfix product-wrapper">
+                    <div className="product-info-wrap tab" >           
+                        <ProductItem item = { this.props.objBufferData.data }/>     
+                        <button className="add-to-cart"
+                            onClick={()=>{this.addToCartHandeler(this.props.myCartData,this.props.objBufferData.data)}}> 
+                            Add to Cart and review later 
+                        </button>            
+                    </div>
+                    <div className="product-seller-wrap tab">
+                        <ContactToseller />
+                        <SelerInformation sellerInfo = {this.props.objBufferData.sellerInfo}/>
+                    </div>
                 </div>
+            </div>
             )
         }
     }

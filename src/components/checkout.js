@@ -15,8 +15,8 @@ render(){
             )
     }); 
     return(
-        <div>
-          <ul>
+        <div className="container">
+          <ul className="ckec-items">
             { chekOutItems }
           </ul>
           <span> Total Price: { totalPrice } </span>
