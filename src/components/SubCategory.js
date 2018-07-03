@@ -13,7 +13,7 @@ class SubCategory extends Component {
     }
 
  productItems = () => {
-
+    console.log("hi git ignore");
       const products = this.props.objBufferData.data;
       const searchQuery = this.props.filterSearchQuery;
       const productBuffer = [];
@@ -75,7 +75,7 @@ class SubCategory extends Component {
                 <div className="container clearfix">
                     <span  className="categories-header"> { this.props.objBufferData.details.title } </span>
                     <ProductsFilterComponent item = {this.props.objBufferData.details.filterData} />
-                    <div className=" tab product-items">
+                    <div className="product-items">
                         <ul className="cate-list subcategory clearfix">
                             {list}
                         </ul>
